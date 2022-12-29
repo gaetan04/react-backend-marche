@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                nomMarche
+            </th>
+            <th>
+                emplacementMarche
+            </th>
+            <th>
+                heureOuvertureMarche
+            </th>
+            <th>
+                heureFermetureMarche
+            </th>
+            <th>
+                nbreHangars
+            </th>
+            <tr th:each="item : ${marches}">
+                <td th:text="${item.nomMarche}"></td>
+                <td th:text="${item.emplacementMarche"></td>
+                <td th:text="${item.heureOuvertureMarche}"></td>
+                <td th:text="${item.heureFermetureMarche}"></td>
+                <td th:text="${item. nbre_hangars}"></td>
+            </tr>
+        </tr>
+    </table>
+</body>
+</html>
